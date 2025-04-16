@@ -1,20 +1,20 @@
 // question 1
-function hello(name){
-    return(`hello ${name}`);
+function hello(name) {
+    return (`hello ${name}`);
 }
 
 // question 2
-function sqfeetToAcre(sqfeet){
+function sqfeetToAcre(sqfeet) {
     return sqfeet / 43560;
 }
 
 // question 3
-function lawnTime(width, length, rate){
+function lawnTime(width, length, rate) {
     return width * length / rate;
 }
 
 // question 4
-function airQuality (airQualityIndex) {
+function airQuality(airQualityIndex) {
     if (airQualityIndex >= 0 && airQualityIndex <= 50) {
         return "Good";
     }
@@ -35,5 +35,28 @@ function airQuality (airQualityIndex) {
     }
 }
 
+// question 5
+function yeeHa(x) {
+    if (x % 3 === 0 && x % 7 === 0) {
+        return "Yee Ha";
+    }
+    else if (x % 7 === 0) {
+        return "Ha";
+    }
+    else if (x % 3 === 0) {
+        return "Yee";
+    }
+    else {
+        return "Nada";
+    }
+}
 
-export {hello, sqfeetToAcre, lawnTime, airQuality}
+// question 6
+function slope(x1, y1, x2, y2) {
+    let rise = y2 - y1;
+    let run = x2 - x1;
+    let slope = rise / run;
+    return slope;
+}
+
+export { hello, sqfeetToAcre, lawnTime, airQuality, yeeHa, slope}
